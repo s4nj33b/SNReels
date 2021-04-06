@@ -14,7 +14,7 @@ final class VideoView: UIView {
     private let playerLayer = AVPlayerLayer()
     
     
-    var observer: NSKeyValueObservation?
+    private var observer: NSKeyValueObservation?
     
     private var session: URLSession?
     private var loadingRequests = [AVAssetResourceLoadingRequest]()

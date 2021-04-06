@@ -9,11 +9,11 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
     
-    var playerView: VideoView!
+    private var playerView: VideoView!
     
     
     // MARK: - Variables
-    var feed: Feed?
+    private var feed: Feed?
     
     
     override func awakeFromNib() {

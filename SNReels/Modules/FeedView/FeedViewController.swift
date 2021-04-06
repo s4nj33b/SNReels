@@ -10,11 +10,11 @@ import UIKit
 class FeedViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    let viewModel = FeedViewModel()
-    var data = [Feed]()
-    let cellId = "FeedTableViewCell"
+    private let viewModel = FeedViewModel()
+    private var data = [Feed]()
+    private let cellId = "FeedTableViewCell"
     @objc dynamic var currentIndex = 0
-    var oldAndNewIndices = (0,0)
+    private var oldAndNewIndices = (0,0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
